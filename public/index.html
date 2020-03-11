@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        video {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        canvas {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        #picLeft {
+            grid-column: 1;
+            grid-row: 1;  
+            height: 150px;
+            width: 150px;
+        }
+        #picRight {
+            grid-column: 3;
+            grid-row: 1; 
+            height: 150px;
+            width: 150px; 
+        }
+        img {
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="picLeft"></div>
+    <video id="video" width="720" height="560" autoplay muted></video>
+    <div id="picRight"></div>
+</body>
+</html>
